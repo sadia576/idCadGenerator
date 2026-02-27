@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Container & Card */
+#container,
+#card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+#card {
+  display: none;
+  justify-content: center;
+}
+
+/* Input Fields */
+.inputFields {
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.inputFields h3,
+#card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #ddd;
+  margin-top: 6px;
+}
+
+.inputFields input,
+.inputFields select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: 0.3s;
+}
+
+.inputFields input:focus,
+.inputFields select:focus {
+  box-shadow: 0 0 0 2px #ff4d6d;
+}
+
+/* Buttons */
+.btn button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff4d6d, #ff1f4b);
+  color: white;
+  transition: 0.3s ease;
+}
+#downloadBtn{
+    width: 30%;
+    padding: 14px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff4d6d, #ff1f4b);
+  color: white;
+  transition: 0.3s ease;
+}
+.btn button:hover,
+#downloadBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 77, 109, 0.5);
+}
+
+/* ID Card Styling */
+.id-card {
+  text-align: center;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.id-card h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.id-card p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  h1 { font-size: 24px; }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student ID Card Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+  <h1>ID Card Generator</h1>
+
+  <div id="container">
+    <div class="inputFields">
+      <h3>Student Name</h3>
+      <input type="text" id="name" placeholder="Name">
+    </div>
+
+    <div class="inputFields">
+      <h3>Father Name</h3>
+      <input type="text" id="fatherName" placeholder="Father Name">
+    </div>
+
+    <div class="inputFields">
+      <h3>Roll No</h3>
+      <input type="text" id="rollNum" placeholder="Roll No">
+    </div>
+
+    <div class="inputFields">
+      <h3>Course</h3>
+      <select id="course">
+        <option>Select Course</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Software Development">Software Development</option>
+        <option value="App Development">App Development</option>
+        <option value="Game Development">Game Development</option>
+        <option value="Java Programming">Java Programming</option>
+        <option value="Python">Python</option>
+      </select>
+    </div>
+
+    <div class="inputFields">
+      <h3>Session</h3>
+      <input type="text" id="session" placeholder="Session">
+    </div>
+
+    <div class="btn">
+      <button id="btn">Generate ID Card</button>
+    </div>
+  </div>
+
+  <div id="card"></div>
+
+  <button id="downloadBtn">Download ID Card</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
