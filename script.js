@@ -39,10 +39,13 @@ button.addEventListener("click", () => {
 
 // Download ID Card as PNG
 downloadBtn.addEventListener("click", () => {
+       const cardElement = resultDiv.querySelector(".id-card");
+    cardElement.style.animation = "none";
   html2canvas(resultDiv).then(canvas => {
     const link = document.createElement("a");
     link.download = "ID_Card.png";
     link.href = canvas.toDataURL("image/png");
     link.click();
+    cardElement.style.animation = "fadeIn 0.5s ease";
   });
 });
