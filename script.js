@@ -19,6 +19,10 @@ button.addEventListener("click", () => {
     alert("All fields are required!");
     return;
   }
+  if (rollNo.length !== 6) {
+    alert("Roll number should be 6 digits");
+    return;
+}
 
   heading.textContent = "Student ID Card";
 
